@@ -1,0 +1,353 @@
+:root {
+    --crimson: #dc143d;
+    --grey2: rgb(45, 42, 42);
+}
+
+body {
+    background-color: rgb(45, 42, 42);
+    text-align: center;
+    padding-left: 35rem;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+section {
+    min-height: 100vh;
+}
+.homes {
+    background-color: var(--grey2);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+#education {
+    background-color: var(--grey2);
+    width: 100%;
+}
+.education .box-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-right: 0.2rem solid #fff;
+}
+
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5rem;
+}
+
+.education .box-container .box h3 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    color: var(--crimson);
+}
+
+.education .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+#about {
+    background-color: var(--grey2);
+    /* color: white; */
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    padding: 2rem 1rem;
+    padding-left: 4rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--crimson);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0 0.5rem;
+}
+
+.about .row .counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 20rem;
+    background-color: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--crimson);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.heading span {
+    color: var(--crimson);
+}
+#portfolio {
+    background-color: var(--grey2);
+    width: 100%;
+}
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    /* gap: 9rem; */
+    /* padding: 2rem 0; */
+}
+
+.portfolio .box-container .box {
+    /* height: 100px;
+        width: 300px; */
+    height: 30rem;
+    width: 26rem;
+    margin: 2rem;
+}
+.portfolio .box-container .box .projectinfo {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+    font-size: 10px;
+}
+.portfolio .box-container .box .projectinfo h3 {
+    color: var(--crimson);
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .projectinfo p {
+    color: #eee;
+    text-align: justify;
+}
+.btn1 {
+    padding: 0.2rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+}
+/* .mt-0{
+    margin-bottom: 20px;
+} */
+.bhuv {
+    height: 50px;
+}
+#contact {
+    background-color: var(--grey2);
+    width: 100%;
+}
+
+.p {
+    width: 70%;
+    text-align: center;
+    background-color: darkslategray;
+    height: 32px;
+    border-radius: 12px;
+    box-shadow: 5px 20px 20px rgb(240, 117, 117) inset;
+}
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background-color: #535151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.img img {
+    text-align: center;
+    height: 21rem;
+    width: 17rem;
+    margin-bottom: 0.4rem;
+    object-fit: cover;
+    /* border-radius: 50%; */
+
+    border: 0.7rem solid;
+    border-image: radial-gradient(var(--crimson), black);
+    border-image-slice: 50;
+}
+.name {
+    font-size: 3.5rem;
+    color: white;
+}
+.post {
+    font-size: 2rem;
+    color: #eee;
+}
+.navi {
+    width: 100%;
+}
+.navi ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.navi a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+li a:hover {
+    /* background-color: var(--crimson); */
+    background: linear-gradient(var(--crimson), black);
+}
+.homes span {
+    color: var(--crimson);
+}
+.btn {
+    padding: 0.7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.homes h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+.homes h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+.homes p {
+    font-size: 2rem;
+    color: #eee;
+}
+.contact .heading {
+    margin-top: 12rem;
+}
+
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.contact .row .content .info h3 {
+    padding: 2rem;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #45454533;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    text-align: center;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem;
+    font-weight: normal;
+}
